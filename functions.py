@@ -10,14 +10,16 @@ def perGameOrTotal():
 
 def pickStat(answer):
     stat ='z'
-    while answer not in ['1', '2', '3', '4']:
-        answer = input('Pick a stat\n1. AST\n2. STL\n3. BLK\n4. PTS\n')
+    while answer not in ['1', '2', '3', '4','5']:
+        answer = input('Pick a stat\n1. AST\n2. REB\n3. STL\n4. BLK\n5. PTS\n')
     
     if answer == '1':
         stat = 'AST'
     elif answer == '2':
-        stat = 'STL'    
+        stat = 'REB'
     elif answer == '3':
+        stat = 'STL'    
+    elif answer == '4':
         stat = 'BLK'
     else:
         stat = 'PTS'

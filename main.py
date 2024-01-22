@@ -23,6 +23,8 @@ for row in table.tbody.find_all('tr'):
 
         if selected_stat == 'AST':
             stat_value = columns[23].text.strip()
+        elif selected_stat == 'REB':
+            stat_value = columns[22].text.strip()
         elif selected_stat == 'STL':
             stat_value = columns[24].text.strip()
         elif selected_stat == 'BLK':
@@ -42,5 +44,5 @@ df = df.sort_values(by=selected_stat, ascending=False)
 df = df.reset_index(drop=True)
 df.index += 1
 
-#print(df.head(20))
-print(df.loc[df['Tm'] == 'BOS'])
+print(df.head(20))
+#print(df.loc[df['Tm'] == 'BOS'])
