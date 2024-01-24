@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
-from functions import perGameOrTotal, pickStat
+from functions import perGameOrTotal, pickStat, teamSelection
 
 url = perGameOrTotal()
 
@@ -40,9 +40,15 @@ df = pd.DataFrame(data_list)
 df[selected_stat] = pd.to_numeric(df[selected_stat])
 df = df.sort_values(by=selected_stat, ascending=False)
 
+byTeam = 0
+while byTeam not in ['1','2']:
+    byTeam = input('1. Team Leaders:\n2. League Leaders:\n')
+
 # Reset Index to start at 1
 df = df.reset_index(drop=True)
 df.index += 1
 
-print(df.head(20))
-#print(df.loc[df['Tm'] == 'BOS'])
+if byTeam == '1':
+    print(df.loc[df['Tm'] == teamSelection()])
+else:
+    print(df.head(20))

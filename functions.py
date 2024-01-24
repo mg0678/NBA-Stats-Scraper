@@ -24,3 +24,75 @@ def pickStat(answer):
     else:
         stat = 'PTS'
     return stat
+
+def teamSelection():
+    team = 'z'
+    answer = 0
+    teams = []
+    for i in range(30):
+        teams.append(str(i+1))
+
+    while answer not in teams:
+        answer = input('Pick Team:\n')
+    if answer == '1':
+        team = 'ATL'
+    elif answer == '2':
+        team = 'BOS'
+    elif answer == '3':
+        team = 'BRK'
+    elif answer == '4':
+        team = 'CHO'
+    elif answer == '5':
+        team = 'CHI'
+    elif answer == '6':
+        team = 'CLE'    
+    elif answer == '7':
+        team = 'DAL'
+    elif answer == '8':
+        team = 'DEN'
+    elif answer == '9':
+        team = 'DET'
+    elif answer == '10':
+        team = 'GDW'
+    elif answer == '11':
+        team = 'HOU'
+    elif answer == '12':
+        team = 'IND'
+    elif answer == '13':
+        team = 'LAC'
+    elif answer == '14':
+        team = 'LAL'
+    elif answer == '15':
+        team = 'MEM'
+    elif answer == '16':
+        team = 'MIA'
+    elif answer == '17':
+        team = 'MIL'
+    elif answer == '18':
+        team = 'MIN'
+    elif answer == '19':
+        team = 'NOP'
+    elif answer == '20':
+        team = 'NYK'
+    elif answer == '21':
+        team = 'OKC'
+    elif answer == '22':
+        team = 'ORL'
+    elif answer == '23':
+        team = 'PHI'
+    elif answer == '24':
+        team = 'PHO'
+    elif answer == '25':
+        team = 'POR'
+    elif answer == '26':
+        team = 'SAC'
+    elif answer == '27':
+        team = 'SAS'
+    elif answer == '28':
+        team = 'TOR'
+    elif answer == '29':
+        team = 'UTA'
+    else:
+        team = 'WAS'
+
+    return team
