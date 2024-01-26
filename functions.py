@@ -8,7 +8,8 @@ def perGameOrTotal():
         url = 'https://www.basketball-reference.com/leagues/NBA_2024_totals.html'
     return url
 
-def pickStat(answer):
+def pickStat():
+    answer = 0
     stat ='z'
     while answer not in ['1', '2', '3', '4','5']:
         answer = input('Pick a stat\n1. AST\n2. REB\n3. STL\n4. BLK\n5. PTS\n')

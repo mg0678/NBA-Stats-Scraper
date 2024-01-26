@@ -3,8 +3,7 @@ import requests
 import pandas as pd
 from functions import perGameOrTotal, pickStat, teamSelection
 
-again = 'z'
-
+again = 'y'
 while again != 'n':
     url = perGameOrTotal()
 
@@ -15,7 +14,7 @@ while again != 'n':
 
     data_list = []
 
-    selected_stat = pickStat(answer=0)
+    selected_stat = pickStat()
 
     for row in table.tbody.find_all('tr'):
         columns = row.find_all('td')
@@ -57,6 +56,8 @@ while again != 'n':
        print(df.head(20))
 
     again = input("Search again? [y/n]:")
+    again = again.lower()
     while again not in ['y','n']:
         print('Invalid input\n')
         again = input("Search again? [y/n]:")
+        again = again.lower()
