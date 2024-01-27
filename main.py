@@ -6,7 +6,6 @@ from functions import perGameOrTotal, pickStat, teamSelection
 again = 'y'
 while again != 'n':
     url = perGameOrTotal()
-
     data = requests.get(url,verify=False).text
     soup = BeautifulSoup(data, 'html.parser')
 
