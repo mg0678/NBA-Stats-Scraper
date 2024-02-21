@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>878</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QRadioButton" name="tmBtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>By Team</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">tmPlyrGrp</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="leagueBtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>League Leaders</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">tmPlyrGrp</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="perGmBtn">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Per Game</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">gmSeasonGrp</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="seasonBtn">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>50</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Season Totals</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">gmSeasonGrp</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>141</y>
+      <width>476</width>
+      <height>352</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="horizontalSpacing">
+      <number>48</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>20</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="atlBox">
+       <property name="text">
+        <string>Atlanta Hawks</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="bosBox">
+       <property name="text">
+        <string>Boston Celtics</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QCheckBox" name="brkBox">
+       <property name="text">
+        <string>Brooklyn Nets</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="choBox">
+       <property name="text">
+        <string>Charlotte Hornets</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="chiBox">
+       <property name="text">
+        <string>Chicago Bulls</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="cleBox">
+       <property name="text">
+        <string>Cleveland Cavaliers</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="dalBox">
+       <property name="text">
+        <string>Dallas Mavericks</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="denBox">
+       <property name="text">
+        <string>Denver Nuggets</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QCheckBox" name="detBox">
+       <property name="text">
+        <string>Detroit Pistons</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="gdwBox">
+       <property name="text">
+        <string>Golden State Warriors</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="houBox">
+       <property name="text">
+        <string>Houston Rockets</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QCheckBox" name="indBox">
+       <property name="text">
+        <string>Indiana Pacers</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QCheckBox" name="lacBox">
+       <property name="text">
+        <string>LA Clippers</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QCheckBox" name="lalBox">
+       <property name="text">
+        <string>LA Lakers</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QCheckBox" name="memBox">
+       <property name="text">
+        <string>Memphis Grizzlies</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QCheckBox" name="miaBox">
+       <property name="text">
+        <string>Miami Heat</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QCheckBox" name="milBox">
+       <property name="text">
+        <string>Milwaukee Bucks</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QCheckBox" name="minBox">
+       <property name="text">
+        <string>Minnesota Timberwolves</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QCheckBox" name="nopBox">
+       <property name="text">
+        <string>New Orleans Pelicans</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QCheckBox" name="nykBox">
+       <property name="text">
+        <string>New York Knicks</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QCheckBox" name="okcBox">
+       <property name="text">
+        <string>Oklahoma City Thunder</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QCheckBox" name="orlBox">
+       <property name="text">
+        <string>Orlando Magic</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QCheckBox" name="phiBox">
+       <property name="text">
+        <string>Philadelphia 76ers</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QCheckBox" name="phoBox">
+       <property name="text">
+        <string>Phoenix Suns</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QCheckBox" name="porBox">
+       <property name="text">
+        <string>Portland Trailblazers</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QCheckBox" name="sacBox">
+       <property name="text">
+        <string>Sacramento Kings</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QCheckBox" name="sasBox">
+       <property name="text">
+        <string>San Antonio Spurs</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QCheckBox" name="torBox">
+       <property name="text">
+        <string>Toronto Raptors</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QCheckBox" name="utaBox">
+       <property name="text">
+        <string>Utah Jazz</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QCheckBox" name="wasBox">
+       <property name="text">
+        <string>Washington Wizards</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="submitBtn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Submit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitBtn">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>510</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>20</y>
+      <width>391</width>
+      <height>791</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>948</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="tmPlyrGrp"/>
+  <buttongroup name="gmSeasonGrp"/>
+ </buttongroups>
+</ui>
